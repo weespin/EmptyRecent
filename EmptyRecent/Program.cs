@@ -31,6 +31,14 @@ namespace EmptyRecent
                 SteamAPI.Shutdown();
                 Console.WriteLine("Stopping playing fake game #3");
                 Console.WriteLine("Done!");
+                Console.WriteLine("Running fake game #4");
+                Environment.SetEnvironmentVariable("SteamAppId", "744350");
+                SteamAPI.Init();
+                SteamAPI.Shutdown();
+                Console.WriteLine("Stopping playing fake game #4");
+                Console.WriteLine("Done!");
+
+
             }
             else
             {
